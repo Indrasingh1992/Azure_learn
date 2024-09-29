@@ -13,6 +13,9 @@ powershell -Command "az account set --subscription %subscriptionId% --output non
 REM Start the VM
 powershell -Command "az vm start --resource-group %resourceGroupName% --name %vmName% --output table"
 
+REM get the public_IP
+az vm list-ip-addresses --resource-group VIRUAL_MACHINES --name MyLowCostVM --output table
+
 @echo VM start command executed!
 cmd
 

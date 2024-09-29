@@ -37,3 +37,4 @@ az vm list-ip-addresses --resource-group VIRUAL_MACHINES --name MyLowCostVM --ou
 
 
 
+
